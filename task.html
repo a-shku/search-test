@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var list = [  
+   {  
+      "id":242,
+      "name":"Abdul Rahman Baba",
+      "position":"Left-Back",
+      "jerseyNumber":6,
+      "dateOfBirth":"1986-07-02",
+      "nationality":"Colombia",
+      "contractUntil":"2020-06-30",
+      "marketValue":"10,000,000 ˆ"
+   },
+   {  
+      "id":44335,
+      "name":"gfbnfgn",
+      "position":"Centre Forward",
+      "jerseyNumber":9,
+      "dateOfBirth":"1986-02-10",
+      "nationality":"Colombia",
+      "contractUntil":"2016-06-30",
+      "marketValue":"35,000,000 ˆ"
+   },
+   {  
+      "id":435,
+      "name":"Falcao",
+      "position":"Centre Forward",
+      "jerseyNumber":9,
+      "dateOfBirth":"1986-02-10",
+      "nationality":"Colombia",
+      "contractUntil":"2016-06-30",
+      "marketValue":"35,000,000 ˆ"
+   },
+   {  
+      "id":1840,
+      "name":"Asmir Begovic",
+      "position":"Keeper",
+      "jerseyNumber":1,
+      "dateOfBirth":"1986-06-20",
+      "nationality":"Bosnia-Herzegovina",
+      "contractUntil":"2033-06-30",
+      "marketValue":"12,000,000 ˆ"
+   }
+]
+	var search = "Colombia";
+	var searchGlobal = search.split(' ');
+	var searchGlobalLength = searchGlobal.length;
+	var result = [];
+	var sovpadeniya = [];
+	var temp = '';
+
+
+for(var object in list) {
+
+	for(var svojstvo in list[object]) {
+		var qwert =  String(list[object][svojstvo]);
+
+
+		for (var k in searchGlobal) {
+
+
+				temp = qwert.match(searchGlobal[k]);  
+
+				if (temp) {
+					console.log('temp = ', temp);
+					sovpadeniya.push(temp);
+
+				} 
+		}
+
+	}
+
+
+	if (sovpadeniya.length == searchGlobal.length) {
+		result.push(list[object]);
+	}
+	sovpadeniya = [];
+
+
+}
+// console.log(result);
+
+
+
+// var arr = [];
+
+// for ( var i=0, len=result.length; i < len; i++ )
+//     arr[result[i]['id']] = result[i];
+
+// result = new Array();
+// for ( var key in arr )
+//     result.push(arr[key]);
+
+
+console.log(result);
+
+	</script>
+
+</body>
+</html>

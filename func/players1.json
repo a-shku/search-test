@@ -1,0 +1,24 @@
+[  
+   {  
+      "id":242,
+      "name":"Abdul Rahman Baba",
+      "position":"Left-Back",
+      "jerseyNumber":6,
+      "dateOfBirth":"1994-07-02",
+      "nationality":"Ghana",
+      "contractUntil":"2020-06-30",
+      "marketValue":"10,000,000 ˆ"
+   },
+   {  
+      "id":435,
+      "name":"Falcao",
+      "position":"Centre Forward",
+      "jerseyNumber":9,
+      "dateOfBirth":"1986-02-10",
+      "nationality":"Colombia",
+      "contractUntil":"2016-06-30",
+      "marketValue":"35,000,000 ˆ"
+   }
+   
+  
+]
